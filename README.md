@@ -16,7 +16,7 @@ Assuming you have set up an Anaconda or Miniconda environment, the following
 commands should get you started:
 
 ```
-conda create -y -n matryoshka
+conda create -y -n matryoshka python=3.7
 source activate matryoshka
 conda install -y numpy scipy pillow
 conda install -y pytorch torchvision -c pytorch
