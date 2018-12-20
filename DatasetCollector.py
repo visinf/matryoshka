@@ -110,7 +110,7 @@ class ShapeNetPTNCollector(DatasetCollector):
 
 class BlendswapOGNCollector(DatasetCollector):
 
-	def __init__(self, base_dir, resolution=512)
+	def __init__(self, base_dir, resolution=512):
 		res2dir = {64:'64_l4', 128:'128_l4', 256:'256_l5', 512:'512_l5'}
 		self.base_dir = os.path.join(base_dir, res2dir[resolution])
 		assert os.path.exists(self.base_dir), ('Base directory for OGN Blendswap dataset does not exist [%s].' % self.base_dir)
@@ -144,7 +144,7 @@ class BlendswapOGNCollector(DatasetCollector):
 
 class ShapeNetCarsOGNCollector(DatasetCollector):
 	"""Assuming that text files with sample paths are in root dir."""
-	def __init__(self, base_dir, shapenet_base_dir, resolution=128, crop=True)
+	def __init__(self, base_dir, shapenet_base_dir, resolution=128, crop=True):
 		res2dir = {64:'64_l4', 128:'128_l4', 256:'256_l4'}
 		self.base_dir = os.path.join(base_dir, res2dir[resolution])		
 		assert os.path.exists(self.base_dir), ('Base directory for OGN ShapeNet Cars dataset does not exist [%s].' % self.base_dir)
